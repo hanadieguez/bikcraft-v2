@@ -1,6 +1,9 @@
-@import "./reset.css";
-@import "./custom.css";
-@import "./header.css";
+@import "./global/reset.css";
+@import "./global/cores.css";
 
-@import "./responsive-1024.css";
-@import "./responsive-600.css";
+@import "./utilitarios/tipografia.css";
+@import "./utilitarios/componentes.css";
+
+@import "./global/header.css";
+@import "./home/intro.css";
+@import "./bicicletas/bicicletas-lista.css";

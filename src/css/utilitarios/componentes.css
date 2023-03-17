@@ -1,0 +1,33 @@
+.container {
+  box-sizing: border-box;
+  max-width: 75rem;
+  margin: 0 auto;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background: linear-gradient(#ffbf00, #f2a50c);
+  color: var(--p5);
+  border-radius: 0.25rem;
+  box-shadow: 0rem 0.0625rem 0.125rem rgba(0, 0, 0, 0.1);
+  font: 600 1.125rem/1.33 "Poppins";
+}
+
+.btn:hover {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background: linear-gradient(#ffb60d, #e59317);
+  color: var(--p5);
+  border-radius: 0.25rem;
+  box-shadow: 0rem 0.0625rem 0.125rem rgba(0, 0, 0, 0.1);
+  font-weight: 600;
+}
+
+@media (width <= 415px) {
+  .btn {
+    font-size: 0.875rem;
+  }
+}
