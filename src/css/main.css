@@ -6,6 +6,7 @@
 @import "./utilitarios/componentes.css";
 
 @import "./global/header.css";
+@import "./global/footer.css";
 
 /* ------------ BICICLETAS ------------ */
 @import "./bicicletas/bicicletas-lista.css";

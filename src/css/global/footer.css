@@ -1,0 +1,73 @@
+.footer-bg {
+  background: var(--c12);
+}
+
+.footer {
+  color: var(--c5);
+  padding: 3.75rem 1.25rem;
+  display: grid;
+  gap: 7.5rem;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+footer h3 {
+  margin-bottom: 2rem;
+}
+
+.footer a {
+  color: var(--c5);
+}
+
+.footer-contato ul {
+  display: grid;
+  gap: 0.625rem;
+  max-width: 22.5rem;
+}
+
+.footer-contato ul li:nth-child(even)::after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 0.125rem;
+  background: var(--c11);
+}
+
+.footer-redes {
+  padding-top: 1.25rem;
+  display: flex;
+  gap: 2rem;
+}
+
+.footer-menu a {
+  display: inline-block;
+  padding: 0.3125rem 0;
+}
+
+.footer-menu a:hover {
+  color: var(--w);
+}
+
+.credito {
+  grid-column: 1 / -1;
+}
+
+@media (width <= 1024px) {
+  .footer {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer > img {
+    display: none;
+  }
+}
+
+@media (width <= 415px) {
+  .footer {
+    grid-template-columns: 1fr;
+    gap: 5rem;
+  }
+
+  .footer-menu a {
+    padding: 0.625rem 0;
+  }
+}

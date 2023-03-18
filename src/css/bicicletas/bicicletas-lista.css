@@ -47,3 +47,9 @@
 .bicicletas-lista li span {
   padding-left: 1.25rem;
 }
+
+@media (width <= 415px) {
+  .bicicletas-lista {
+    padding-bottom: 3.75rem;
+  }
+}
