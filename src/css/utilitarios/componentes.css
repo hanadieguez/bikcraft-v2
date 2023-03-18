@@ -26,6 +26,11 @@
   font-weight: 600;
 }
 
+.btn.secundario {
+  background: var(--c10);
+  color: var(--c4);
+}
+
 @media (width <= 415px) {
   .btn {
     font-size: 0.875rem;

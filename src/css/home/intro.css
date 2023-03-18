@@ -8,7 +8,6 @@
   grid-template-columns: 1fr 1fr;
   gap: 2.5rem;
   align-items: end;
-  color: var(--w);
 }
 
 .intro-conteudo {

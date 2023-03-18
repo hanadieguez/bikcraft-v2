@@ -5,12 +5,17 @@
 @import "./utilitarios/tipografia.css";
 @import "./utilitarios/componentes.css";
 
+@import "./global/header.css";
+
+/* ------------ BICICLETAS ------------ */
 @import "./bicicletas/bicicletas-lista.css";
 
-@import "./global/header.css";
+/* ------------ SEGUROS ------------ */
+@import "./seguros/seguros.css";
 
 /* --------------- HOME --------------- */
 @import "./home/intro.css";
 @import "./home/tecnologia.css";
 @import "./home/parceiros.css";
 @import "./home/depoimento.css";
+@import "./home/seguros.css";
