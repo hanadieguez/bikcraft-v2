@@ -1,0 +1,15 @@
+.depoimento {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: var(--p1);
+}
+
+.depoimento img {
+  height: 100%;
+  border-radius: 0;
+}
+
+.depoimento-conteudo {
+  padding-left: 80px;
+  max-width: 560px;
+}
