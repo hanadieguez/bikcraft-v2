@@ -8,9 +8,6 @@
 @import "./global/header.css";
 @import "./global/footer.css";
 
-/* ------------ BICICLETAS ------------ */
-@import "./bicicletas/bicicletas-lista.css";
-
 /* ------------ SEGUROS ------------ */
 @import "./seguros/seguros.css";
 
@@ -22,3 +19,7 @@
 
 /* --------------- TERMOS --------------- */
 @import "./termos/termos.css";
+
+/* ------------ BICICLETAS ------------ */
+@import "./bicicletas/bicicletas-lista.css";
+@import "./bicicletas/bicicletas.css";
