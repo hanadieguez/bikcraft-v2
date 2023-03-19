@@ -1,0 +1,40 @@
+.termos {
+  padding: 60px 20px;
+}
+
+.termos p {
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+.termos-conteudo {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.termos-conteudo div {
+  max-width: 760px;
+}
+
+.termos-conteudo p + h2 {
+  padding-top: 48px;
+}
+
+.termos-conteudo p {
+  padding-top: 20px;
+}
+
+.termos-conteudo .fonte-p-l {
+  font-weight: 600;
+}
+
+.termos-conteudo .fonte-r-m {
+  font-weight: 400;
+}
+
+@media (width <= 415px) {
+  .termos-conteudo {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
