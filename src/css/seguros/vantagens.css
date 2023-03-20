@@ -1,0 +1,39 @@
+.vantagens-bg {
+  background: var(--c12);
+}
+
+.vantagens h2 {
+  padding-top: 120px;
+}
+
+.lista-vantagens {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, max-content));
+  gap: 40px;
+  padding-top: 90px;
+  padding-bottom: 120px;
+}
+
+.lista-vantagens li {
+  display: grid;
+  gap: 8px;
+}
+
+.lista-vantagens .fonte-p-l {
+  font-weight: 600;
+}
+
+.lista-vantagens .font-r-m {
+  font-weight: 400;
+}
+
+@media (width <= 415px) {
+  .vantagens h2 {
+    padding-top: 60px;
+  }
+
+  .lista-vantagens {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}

@@ -51,9 +51,30 @@
   background-image: url("../../img/icones/lista.svg");
 }
 
+.seguros-conteudo {
+  padding: 60px 20px 120px;
+}
+
+.seguros-conteudo p {
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+.seguros-conteudo h1 {
+  margin-bottom: 120px;
+}
+
+.seguros-conteudo .seguros {
+  padding: 0;
+}
+
 @media (width <= 415px) {
   .seguros {
     grid-template-columns: 1fr;
     padding-bottom: 3.75rem;
+  }
+
+  .seguros-conteudo h1 {
+    margin-bottom: 60px;
   }
 }
