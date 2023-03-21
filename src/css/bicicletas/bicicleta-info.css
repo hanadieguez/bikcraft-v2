@@ -1,0 +1,150 @@
+.bicicleta {
+  padding: 60px 20px 120px;
+}
+
+.bicicleta-selecionada {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding-bottom: 120px;
+}
+
+.bicicleta-foto {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.bicicleta-foto img {
+  flex: 1;
+  min-width: 270px;
+  object-fit: cover;
+}
+
+.bicicleta-foto img:first-child {
+  flex: 100%;
+}
+
+.bicicleta-sobre p {
+  margin-bottom: 32px;
+}
+
+.comprar {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  justify-items: start;
+  align-items: center;
+  gap: 8px 12px;
+  margin-bottom: 40px;
+}
+
+.comprar a {
+  grid-row: 1 / 3;
+}
+
+.comprar img {
+  width: 16px;
+}
+
+.comprar span {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--c12);
+  color: var(--c6);
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.comprar .fonte-p-xs {
+  font-size: 12px;
+}
+
+.bicicleta-sobre .fonte-p-xs {
+  text-transform: uppercase;
+  letter-spacing: 0.015rem;
+}
+
+h2.fonte-p-xs {
+  margin-bottom: 12px;
+}
+
+.bicicleta-sobre ul {
+  background: var(--c12);
+  padding: 32px;
+  border-radius: 4px;
+}
+
+.bicicleta-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.bicicleta-info li {
+  display: grid;
+}
+
+.bicicleta-info span {
+  margin-top: 4px;
+  margin-bottom: 8px;
+}
+
+.bicicleta-info p {
+  color: var(--c5);
+  max-width: 220px;
+}
+
+.bicicleta-info .fonte-p-m-b {
+  font-weight: 500;
+}
+
+ul {
+  margin-bottom: 40px;
+}
+
+ul:last-child {
+  margin-bottom: 0;
+}
+
+.bicicleta-specs li {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--c11);
+  padding: 5px 0;
+}
+
+.bicicleta-specs li:last-child {
+  border-bottom: none;
+}
+
+.bicicleta-specs li div:first-child {
+  color: var(--c4);
+}
+
+.bicicleta-specs li div:last-child {
+  color: var(--c6);
+}
+
+@media (width <= 415px) {
+  .bicicleta {
+    padding-bottom: 60px;
+  }
+  
+  .bicicleta-selecionada {
+    grid-template-columns: 1fr;
+    padding-bottom: 60px;
+  }
+
+  .bicicleta-foto img:nth-child(n + 2) {
+    display: none;
+  }
+
+  .bicicleta-info {
+    grid-template-columns: 1fr;
+  }
+
+  .bicicleta-info p {
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,18 @@
+.outras-bicicletas.bicicletas-lista {
+  padding-top: 90px;
+}
+
+.bicicletas-lista {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.outras-bicicletas h2 {
+  padding-left: 20px;
+}
+
+@media (width <= 415px) {
+  .outras-bicicletas.bicicletas-lista {
+    padding-top: 60px;
+  }
+}

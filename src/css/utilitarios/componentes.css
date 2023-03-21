@@ -18,6 +18,7 @@
   border-radius: 0.25rem;
   box-shadow: 0rem 0.0625rem 0.125rem rgba(0, 0, 0, 0.1);
   font: 600 1.125rem/1.33 "Poppins";
+  text-transform: uppercase;
 }
 
 .btn:hover {

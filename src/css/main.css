@@ -8,20 +8,25 @@
 @import "./global/header.css";
 @import "./global/footer.css";
 
-/* ------------ SEGUROS ------------ */
-@import "./seguros/seguros.css";
-@import "./seguros/vantagens.css";
-@import "./seguros/faq.css";
-
 /* --------------- HOME --------------- */
 @import "./home/intro.css";
 @import "./home/tecnologia.css";
 @import "./home/parceiros.css";
 @import "./home/depoimento.css";
 
-/* --------------- TERMOS --------------- */
-@import "./termos/termos.css";
-
 /* ------------ BICICLETAS ------------ */
 @import "./bicicletas/bicicletas-lista.css";
 @import "./bicicletas/bicicletas.css";
+
+/* --------- BICICLETAS > ESCOLHIDA --------- */
+@import "./bicicletas/bicicleta-info.css";
+@import "./bicicletas/outras.css";
+@import "./bicicletas/bicicleta-seguro.css";
+
+/* -------------- SEGUROS -------------- */
+@import "./seguros/seguros.css";
+@import "./seguros/vantagens.css";
+@import "./seguros/faq.css";
+
+/* --------------- TERMOS --------------- */
+@import "./termos/termos.css";
