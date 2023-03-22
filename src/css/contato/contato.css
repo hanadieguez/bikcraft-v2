@@ -1,0 +1,115 @@
+#contato {
+  background: var(--c1);
+}
+
+.contato-bg {
+  box-shadow: inset 0 -220px var(--w);
+}
+
+.contato {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin-bottom: 120px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.contato-loja {
+  padding: 60px;
+  background: var(--c12);
+  border-radius: 4px 0 0 4px;
+}
+
+.contato-dados {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: grid;
+  gap: 32px;
+}
+
+.contato-endereco {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 8px;
+}
+
+.contato-dados div {
+  display: grid;
+}
+
+.contato__formulario {
+  padding: 60px 40px 40px 60px;
+  background: var(--w);
+  border-radius: 0 4px 4px 0;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.contato__label {
+  display: block;
+  padding-bottom: 4px;
+}
+
+.contato__input,
+textarea {
+  width: 100%;
+  background: var(--c1);
+  border: 1px solid var(--c2);
+  border-radius: 4px;
+  padding: 12px;
+  box-sizing: border-box;
+}
+
+form div:nth-child(n + 3) {
+  grid-column: 1 / -1;
+}
+
+form .btn {
+  justify-self: start;
+}
+
+.contato-redes {
+  display: flex;
+  gap: 32px;
+  margin-left: 20px;
+}
+
+@media (width <= 415px) {
+  .contato-bg {
+    box-shadow: none;
+  }
+
+  .contato {
+    grid-template-columns: 1fr;
+    margin-bottom: 0;
+    padding-bottom: 60px;
+  }
+
+  .contato-loja {
+    border-radius: 4px 4px 0 0;
+    padding-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .contato-dados {
+    padding: 40px 0;
+  }
+
+  .contato__formulario {
+    border-radius: 0 0 4px 4px;
+    padding: 20px;
+  }
+
+  form div {
+    grid-column: 1 / -1;
+  }
+
+  form .btn {
+    width: 100%;
+    grid-column: 1 / -1;
+  }
+}

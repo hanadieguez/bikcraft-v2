@@ -28,5 +28,9 @@
 @import "./seguros/vantagens.css";
 @import "./seguros/faq.css";
 
+/* --------- CONTATO --------- */
+@import "./contato/contato.css";
+@import "./contato/lojas-locais.css";
+
 /* --------------- TERMOS --------------- */
 @import "./termos/termos.css";

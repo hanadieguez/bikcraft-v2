@@ -1,5 +1,9 @@
 /* p: Poppins; r: Roboto */
 
+.titulo-principal {
+  padding: 60px 20px;
+}
+
 .fonte-p-xxl {
   font: 600 4rem/1.12 "Poppins";
 }
@@ -41,11 +45,11 @@
   font: 400 1rem/1.5 "Roboto";
 }
 
-.fonte-r-xs {
+.fonte-p-xs {
   font: 600 0.75rem/1.33 "Poppins";
 }
 
-.fonte-p-xs {
+.fonte-r-xs {
   font: 400 0.875rem/1.43 "Roboto";
 }
 

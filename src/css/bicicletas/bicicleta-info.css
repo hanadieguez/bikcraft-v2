@@ -1,7 +1,3 @@
-.bicicleta {
-  padding: 60px 20px 120px;
-}
-
 .bicicleta-selecionada {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -98,11 +94,11 @@ h2.fonte-p-xs {
   font-weight: 500;
 }
 
-ul {
+#bicicleta ul {
   margin-bottom: 40px;
 }
 
-ul:last-child {
+#bicicleta ul:last-child {
   margin-bottom: 0;
 }
 
@@ -127,10 +123,6 @@ ul:last-child {
 }
 
 @media (width <= 415px) {
-  .bicicleta {
-    padding-bottom: 60px;
-  }
-  
   .bicicleta-selecionada {
     grid-template-columns: 1fr;
     padding-bottom: 60px;
