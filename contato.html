@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 
+  <link rel="preload" href="./src/css/main.css" as="style">
   <link rel="stylesheet" href="./src/css/main.css">
   <link rel="shortcut icon" href="./favicon.svg" type="image/x-icon">
 
@@ -80,31 +81,29 @@
 
         </div>
 
-        <div class="contato__formulario">
-          <form action="#" method="post">
-            <div>
-              <label class="contato__label fonte-p-s" for="nome">Nome</label>
-              <input class="contato__input fonte-r-s" type="text" id="nome" placeholder="Seu nome">
-            </div>
+        <form class="contato__formulario" action="#" method="post">
+          <div>
+            <label class="contato__label fonte-p-s" for="nome">Nome</label>
+            <input class="contato__input fonte-r-s" type="text" id="nome" placeholder="Seu nome">
+          </div>
 
-            <div>
-              <label class="contato__label fonte-p-s" for="telefone">Telefone</label>
-              <input class="contato__input fonte-r-s" type="tel" id="telefone" placeholder="(00) 9999-9999" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
-            </div>
+          <div>
+            <label class="contato__label fonte-p-s" for="telefone">Telefone</label>
+            <input class="contato__input fonte-r-s" type="tel" id="telefone" placeholder="(00) 9999-9999" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+          </div>
 
-            <div>
-              <label class="contato__label fonte-p-s" for="email">Email</label>
-              <input class="contato__input fonte-r-s" type="email" id="email" placeholder="contato@email.com">
-            </div>
+          <div>
+            <label class="contato__label fonte-p-s" for="email">Email</label>
+            <input class="contato__input fonte-r-s" type="email" id="email" placeholder="contato@email.com">
+          </div>
 
-            <div>
-              <label class="contato__label fonte-p-s" for="mensagem">Mensagem</label>
-              <textarea class="fonte-r-s" name="mensagem" id="mensagem" cols="30" rows="5" placeholder="O que você precisa?"></textarea>
-            </div>
+          <div>
+            <label class="contato__label fonte-p-s" for="mensagem">Mensagem</label>
+            <textarea class="fonte-r-s" name="mensagem" id="mensagem" cols="30" rows="5" placeholder="O que você precisa?"></textarea>
+          </div>
 
-            <button class="btn" type="submit">Enviar mensagem</button>
-          </form>
-        </div>
+          <button class="btn" type="submit">Enviar mensagem</button>
+        </form>
       </div>
     </div>
   </article>

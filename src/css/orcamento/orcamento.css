@@ -1,0 +1,170 @@
+.orcamento {
+  padding-top: 60px;
+  padding-bottom: 80px;
+}
+
+.orcamento-form {
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+  padding-bottom: 120px;
+}
+
+.orcamento-produto {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  background: var(--c12);
+  padding: 60px 40px;
+  border-radius: 4px 0 0 4px;
+  align-content: start;
+}
+
+.orcamento-produto h3 {
+  grid-column: 1 / -1;
+}
+
+.orcamento-produto input {
+  position: absolute;
+  pointer-events: none;
+  opacity: 0;
+}
+
+input[type="radio"]:checked + label {
+  background: var(--w);
+  color: var(--c11);
+}
+
+input[id="bikcraft"]:checked ~ #orcamento-bicicletas,
+input[id="seguro"]:checked ~ #orcamento-seguros {
+  padding-top: 40px;
+}
+
+.orcamento-produto label {
+  background: var(--c10);
+  padding: 16px 18px;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+h3.fonte-p-s {
+  text-transform: uppercase;
+}
+
+.orcamento-dados {
+  background: var(--w);
+}
+
+input[name="bicicleta"] + label span,
+#orcamento-bicicletas,
+#orcamento-bicicletas div,
+#orcamento-seguros {
+  display: none;
+}
+
+#orcamento-bicicletas,
+#orcamento-seguros {
+  grid-column: 1 / -1;
+}
+
+#orcamento-bicicletas h3 {
+  margin-bottom: 20px;
+}
+
+#orcamento-bicicletas label:nth-child(n + 2) {
+  margin-top: 20px;
+}
+
+input[id="bikcraft"]:checked ~ #orcamento-bicicletas {
+  display: block;
+}
+
+input[id="nimbus"]:checked + label span,
+input[id="magic"]:checked + label span,
+input[id="nebula"]:checked + label span {
+  display: inline-block;
+}
+
+#orcamento-bicicletas input[id="nimbus"]:checked + label + div,
+#orcamento-bicicletas input[id="magic"]:checked + label + div,
+#orcamento-bicicletas input[id="nebula"]:checked + label + div {
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 4px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: var(--w);
+}
+
+#orcamento-bicicletas input[type="radio"]:checked ~ div ul {
+  display: grid;
+  gap: 8px;
+}
+
+#orcamento-bicicletas input[type="radio"]:checked ~ div ul li {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 8px;
+  align-items: center;
+}
+
+#orcamento-bicicletas input[type="radio"]:checked ~ div ul img {
+  width: 20px;
+}
+
+input[name="bicicleta"] + label {
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+
+input[id="seguro"]:checked ~ #orcamento-seguros {
+  display: block;
+}
+
+input[id="seguro"]:checked ~ #orcamento-seguros > div {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 20px;
+}
+
+.orcamento-dados {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 60px 40px;
+  gap: 20px;
+}
+
+.orcamento-dados h2,
+.form-cpf,
+.form-email {
+  grid-column: 1 / -1;
+}
+
+.orcamento-dados input,
+.orcamento-dados select {
+  background: var(--c1);
+  border: 1px solid var(--c2);
+  border-radius: 4px;
+  padding: 12px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.orcamento-dados label {
+  display: block;
+}
+
+.form-sobrenome {
+  grid-column: 2;
+}
+
+.orcamento-dados .checkbox {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 10px;
+}
+
+.orcamento-dados .checkbox input {
+  width: 30px;
+}

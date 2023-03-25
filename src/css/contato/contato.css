@@ -37,15 +37,12 @@
 }
 
 .contato__formulario {
-  padding: 60px 40px 40px 60px;
-  background: var(--w);
-  border-radius: 0 4px 4px 0;
-}
-
-form {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
+  padding: 60px 40px 40px 60px;
+  background: var(--w);
+  border-radius: 0 4px 4px 0;
 }
 
 .contato__label {
@@ -63,11 +60,11 @@ textarea {
   box-sizing: border-box;
 }
 
-form div:nth-child(n + 3) {
+.contato__formulario div:nth-child(n + 3) {
   grid-column: 1 / -1;
 }
 
-form .btn {
+.contato__formulario .btn {
   justify-self: start;
 }
 
@@ -104,11 +101,11 @@ form .btn {
     padding: 20px;
   }
 
-  form div {
+  .contato__formulario div {
     grid-column: 1 / -1;
   }
 
-  form .btn {
+  .contato__formulario .btn {
     width: 100%;
     grid-column: 1 / -1;
   }

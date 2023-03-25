@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 
+  <link rel="preload" href="./src/css/main.css" as="style">
   <link rel="stylesheet" href="./src/css/main.css">
   <link rel="shortcut icon" href="./favicon.svg" type="image/x-icon">
 
@@ -44,9 +45,10 @@
         <p class="fonte-r-l cor-c5">Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para o cliente. Explore o mundo na sua velocidade com a Bikcraft.</p>
         <a href="./bicicletas.html" class="btn">SELECIONE A SUA</a>
       </div>
-      <div class="intro-img">
+      <picture class="intro-img">
+        <source media="(width <= 415px)" srcset="./src/img/bicicleta/nimbus1.jpg">
         <img src="./src/img/fotos/introducao.jpg" alt="Nimbus Stark">
-      </div>
+      </picture>
     </div>
   </main>
 
