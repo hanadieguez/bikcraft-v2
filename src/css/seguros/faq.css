@@ -7,6 +7,10 @@
   margin-bottom: 90px;
 }
 
+.faq button {
+  background: none;
+}
+
 dl div:nth-child(odd) {
   background: var(--c1);
   border-radius: 4px;
@@ -17,16 +21,17 @@ dl div {
   padding-left: 40px;
 }
 
-dt {
+button {
   margin-bottom: 15px;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
   cursor: pointer;
+  width: 100%;
 }
 
-dt::before {
+button::before {
   content: "";
   position: absolute;
   left: -20px;
@@ -35,21 +40,32 @@ dt::before {
   background: var(--p1);
 }
 
-dt::after {
+button::after {
   content: "";
   display: inline-block;
   width: 14px;
   height: 8px;
   background: url("../../img/icones/seta-abrir.svg");
   background-repeat: no-repeat;
+  transition: 0.2s;
 }
 
-dd.fonte-r-m {
-  font-weight: 400;
+button:hover::after,
+button[aria-expanded="true"]::after {
+  transform: rotate(180deg);
 }
 
-dd {
+.faq dd {
+  display: none;
   max-width: 835px;
+}
+
+.faq dd.ativo {
+  display: block;
+}
+
+.faq dd.fonte-r-m {
+  font-weight: 400;
 }
 
 @media (width <= 415px) {
